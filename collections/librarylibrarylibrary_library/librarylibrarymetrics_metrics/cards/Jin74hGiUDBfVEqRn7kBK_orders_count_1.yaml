@@ -1,4 +1,4 @@
-name: Orders Count
+name: Orders Count 1
 description: null
 entity_id: Jin74hGiUDBfVEqRn7kBK
 created_at: '2026-02-24T18:03:43.976577Z'
@@ -51,7 +51,7 @@ visualization_settings:
 card_schema: 23
 serdes/meta:
 - id: Jin74hGiUDBfVEqRn7kBK
-  label: orders_count
+  label: orders_count_1
   model: Card
 archived_directly: false
 dashboard_id: null
