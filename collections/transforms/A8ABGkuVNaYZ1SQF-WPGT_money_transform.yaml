@@ -1,0 +1,26 @@
+collection_id: null
+created_at: '2026-02-24T18:14:41.313607Z'
+creator_id: pr@metabase.com
+description: null
+entity_id: A8ABGkuVNaYZ1SQF-WPGT
+name: Money Transform
+owner_email: null
+owner_user_id: pr@metabase.com
+source:
+  query:
+    database: Postgres
+    native:
+      query: Select *, FORMAT('$%s', sum) as formatted_sum from money_laundering
+    type: native
+  type: query
+source_database_id: Postgres
+tags: []
+target:
+  database: Postgres
+  name: money_transform
+  schema: mb__isolation_4148e_3
+  type: table
+serdes/meta:
+- id: A8ABGkuVNaYZ1SQF-WPGT
+  label: money_transform
+  model: Transform
