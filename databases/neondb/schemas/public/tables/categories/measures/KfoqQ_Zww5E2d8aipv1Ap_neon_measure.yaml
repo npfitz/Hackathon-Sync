@@ -1,0 +1,24 @@
+archived: false
+created_at: '2026-02-24T18:30:36.728018Z'
+creator_id: pr@metabase.com
+definition:
+  database: neondb
+  query:
+    aggregation:
+    - - count
+    source-table:
+    - neondb
+    - public
+    - categories
+  type: query
+description: null
+entity_id: KfoqQ_Zww5E2d8aipv1Ap
+name: neon measure
+table_id:
+- neondb
+- public
+- categories
+serdes/meta:
+- id: KfoqQ_Zww5E2d8aipv1Ap
+  label: neon_measure
+  model: Measure
