@@ -1,7 +1,7 @@
-name: neon meric
+name: New Orders Count
 description: null
-entity_id: OEUCd5JEuZBJDbEdBpdue
-created_at: '2026-02-24T18:30:02.450117Z'
+entity_id: ZRIXwSoCyn_p1e8In4YZO
+created_at: '2026-02-26T13:35:31.800733Z'
 creator_id: pr@metabase.com
 display: line
 archived: false
@@ -13,7 +13,7 @@ database_id: neondb
 table_id:
 - neondb
 - public
-- orders
+- orders_with_full_names
 enable_embedding: false
 embedding_params: null
 made_public_by_id: null
@@ -29,14 +29,14 @@ dataset_query:
     - - field
       - - neondb
         - public
-        - orders
+        - orders_with_full_names
         - order_date
       - base-type: type/DateTime
         temporal-unit: week
     source-table:
     - neondb
     - public
-    - orders
+    - orders_with_full_names
   type: query
 result_metadata:
 - active: true
@@ -48,13 +48,13 @@ result_metadata:
   - field
   - - neondb
     - public
-    - orders
+    - orders_with_full_names
     - order_date
   - temporal-unit: week
   id:
   - neondb
   - public
-  - orders
+  - orders_with_full_names
   - order_date
   inherited_temporal_unit: week
   name: order_date
@@ -64,7 +64,7 @@ result_metadata:
   table_id:
   - neondb
   - public
-  - orders
+  - orders_with_full_names
   unit: week
   visibility_type: normal
   lib/breakout?: true
@@ -94,13 +94,13 @@ visualization_settings:
   column_settings: null
 card_schema: 23
 serdes/meta:
-- id: OEUCd5JEuZBJDbEdBpdue
-  label: neon_meric
+- id: ZRIXwSoCyn_p1e8In4YZO
+  label: new_orders_count
   model: Card
 archived_directly: false
 dashboard_id: null
 document_id: null
 embedding_type: null
-metabase_version: vUNKNOWN (d9ffc40)
+metabase_version: vUNKNOWN (bbd9d8c)
 source_card_id: null
 type: metric
